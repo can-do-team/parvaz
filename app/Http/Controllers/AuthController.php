@@ -37,7 +37,7 @@ class AuthController extends Controller
             'firstname' => 'required|string|max:250',
             'lastname' => 'required|string|max:250',
             'number' => 'required|string|size:11|unique:users,number',
-            'email' => 'required|email|max:250|unique:users,email',
+//            'email' => 'required|email|max:250|unique:users,email',
             'password' => 'required|min:8',
             'repassword' => 'required|same:password',
             'area' => 'required|string|max:250',
@@ -46,9 +46,13 @@ class AuthController extends Controller
             'firstname.required'=> 'نام را وارد کنید', // custom message
             'lastname.required'=> 'نام خانوادگی را وارد کنید', // custom message
             'number.required'=> 'شماره موبایل را وارد کنید', // custom message
-            'email.required'=> 'ایمیل را وارد کنید', // custom message
+            'number.unique'=> 'شماره موبایل از قبل وجود دارد', // custom message
+            'number.size'=> 'شماره موبایل نامعتبر می باشد', // custom message
+//            'email.required'=> 'ایمیل را وارد کنید', // custom message
             'password.required'=> 'رمزعبور را وارد کنید', // custom message
+            'password.min'=> 'رمزعبور حدافل 8 کارکتر باشد', // custom message
             'repassword.required'=> 'تکرار رمزعبور را وارد کنید', // custom message
+            'repassword.same'=> 'تکرار رمزعبور درست نمی باشد', // custom message
             'area.required'=> 'منطقه شهرداری را وارد کنید', // custom message
 //            'address.required'=> 'آدرس را وارد کنید', // custom message
 
@@ -61,7 +65,7 @@ class AuthController extends Controller
             'firstname' =>  $request->firstname,
             'lastname' => $request->lastname,
             'number' =>  $request->number,
-            'email' =>  $request->email,
+            'email' =>  $request->number."@gmail.com",
             'password' =>  $request->password,
             'area' =>  $request->area,
             'address' =>  $request->address,

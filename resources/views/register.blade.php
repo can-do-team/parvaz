@@ -21,23 +21,29 @@
     <input id='number' name='number' class='w-full px-3 py-1 my-5 rounded-[8px]' type="text" placeholder='شماره موبایل'/>
     <input id='password' name='password' class='w-full px-3 py-1 my-5 rounded-[8px]' type="password" placeholder='رمز عبور'/>
     <input id='repassword' name='repassword' class='w-full px-3 py-1 my-5 rounded-[8px]' type="password" placeholder='تکرار رمز عبور'/>
-    <select>
+    <select name="area">
         <option value="">انتخاب منطقه</option>
-        <option value="">منطقه 1</option>
-        <option value="">منطقه 2</option>
-        <option value="">منطقه 3</option>
-        <option value="">منطقه 4</option>
+        <option value="1">منطقه 1</option>
+        <option value="2">منطقه 2</option>
+        <option value="3">منطقه 3</option>
+        <option value="4">منطقه 4</option>
     </select>
-    <select>
+    <select name="group_id">
         <option value="">انتخاب گروه</option>
-        <option value="">گروه 1</option>
-        <option value="">گروه 2</option>
-        <option value="">گروه 3</option>
-        <option value="">گروه 4</option>
-        <option value="">گروه 5</option>
+        <option value="1">گروه 1</option>
+        <option value="2">گروه 2</option>
+        <option value="3">گروه 3</option>
+        <option value="4">گروه 4</option>
+        <option value="5">گروه 5</option>
     </select>
 <br/>
-<input class='bg-blue-700 text-white py-3 px-2 my-5 rounded-2xl w-full' type="submit" value="ورود"/>
+
+<input class='bg-blue-700 text-white py-3 px-2 my-5 rounded-2xl w-full' type="submit" value="ثبت نام"/>
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <p class="text-red-900">{{$error}}</p>
+        @endforeach
+    @endif
 </form>
 </body>
 </html>
