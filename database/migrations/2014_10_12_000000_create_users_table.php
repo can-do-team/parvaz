@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->integer('role')->default(1);//1-user 2-admin
             $table->string('area');
-            $table->text('address');
+            $table->text('address')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
