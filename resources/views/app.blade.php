@@ -6,7 +6,11 @@
     <title>Laravel</title>
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.jsx'])
-    <!-- As you can see, we will use vite with jsx syntax for React-->
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    </style>
     @inertiaHead
 </head>
 <body>
