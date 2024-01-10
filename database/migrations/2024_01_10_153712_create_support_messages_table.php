@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger("support_id")->nullable();
             $table->foreign("support_id")->references("id")->on("supports")->onUpdate("cascade")->onDelete("cascade");
+            $table->text("text");
             $table->timestamps();
         });
     }
