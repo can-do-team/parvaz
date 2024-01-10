@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Broadcast extends Model
 {
     use HasFactory;
+
+
+    protected $fillable = [
+        'title',
+        'address',
+        'area',
+        'volume',
+        'is_active',
+    ];
 }

@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class SupportMessage extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'support_id',
+        'text',
+    ];
+
+
 }
