@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreign("user_id")->references("id")->on("users")->onUpdate("cascade")->onDelete("cascade");
             $table->string("file1");
             $table->string("file2");
-            $table->boolean("is_verify");
+            $table->boolean("is_verify")->default(false);
             $table->timestamps();
         });
     }

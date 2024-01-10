@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('address');
             $table->string('area');
             $table->string('volume');
-            $table->boolean('is_active');
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
