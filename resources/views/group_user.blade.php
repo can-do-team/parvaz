@@ -22,56 +22,9 @@
         </form>
     </header>
 
-    <div class='h-[75svh] flex flex-col items-start justify-center  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px]  overflow-y-scroll'>
+    <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px]  overflow-y-scroll'>
 
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
-            <h2 class="text-[#09969A] text-center mb-4">... </h2>
-            ..
-        </div>
+
         @foreach($groups as $group)
         <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
             <h2 class="text-[#09969A] text-center mb-4 text-xl">{{$group->title}} </h2>
