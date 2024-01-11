@@ -10,9 +10,11 @@ use Illuminate\Support\Facades\Auth;
 
 class GroupController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    public function show_group(){
+        $groups=Group::all();
+        return view('show_group',['groups'=>$groups]);
+
+    }
     public function index()
     {
         //check Admin

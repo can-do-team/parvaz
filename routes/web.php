@@ -17,6 +17,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/show-group",[DashboardController::class,'show_group'])->name('show-group');
 Route::get("/login",[AuthController::class,'login'])->name('login');
 Route::post("/login",[AuthController::class,'loginAction'])->name('loginAction');
 Route::get("/register",[AuthController::class,'register'])->name('register');
