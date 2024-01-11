@@ -11,4 +11,7 @@ class ProfileController extends Controller
         $user=Auth::user();
         return view('profile',compact("user"));
     }
+    public function subscribers(){
+        return view('subscribers');
+    }
 }
