@@ -33,18 +33,18 @@
             <a href="/group/user" class="text-[#707175] hover:text-[#09969A] underline">نمایش همه گروه ها</a>
         </div>
         <nav class="w-11/12 mx-auto flex flex-wrap justify-between">
-        <a href="/broadcast/user" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/broadcast/user" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             توزیع آب
             در محل
         </a>
-        <a href="" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             گزارش کیفیت
             آب
         </a>
-        <a href="/subscribers" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/subscribers" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             امور مشترکین
         </a>
-        <a href="/report/consumption" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/report/consumption" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             گزارش مصرف
             من
         </a>
