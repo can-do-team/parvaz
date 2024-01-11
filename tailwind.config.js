@@ -10,5 +10,8 @@ export default {
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require("@tailwindcss/forms"),
+        require('flowbite/plugin'),
+        require('@themesberg/flowbite/plugin')],
 }
