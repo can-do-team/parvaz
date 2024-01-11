@@ -13,6 +13,10 @@ class AuthController extends Controller
     {
         return view('login');
     }
+    public function report()
+    {
+        return view('report');
+    }
     public function loginAction(Request $request)
     {
         if (Auth::attempt(array('number' => $request->number, 'password' => $request->password))){

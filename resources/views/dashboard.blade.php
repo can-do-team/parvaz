@@ -44,7 +44,7 @@
         <a href="" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             امور مشترکین
         </a>
-        <a href="" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/report/consumption" class="w-5/12 my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
             گزارش مصرف
             من
         </a>
