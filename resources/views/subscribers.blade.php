@@ -38,7 +38,7 @@
             <img src="{{URL::asset('images/home.svg')}}" class="mb-1" alt="">
             خانه
         </a>
-        <a href="" class="flex flex-col justify-between items-center text-white text-sm p-2 hover:bg-[#00000020] w-3/12 rounded-full">
+        <a href="/support" class="flex flex-col justify-between items-center text-white text-sm p-2 hover:bg-[#00000020] w-3/12 rounded-full">
             <img src="{{URL::asset('images/chat.svg')}}" class="mb-1" alt="">
             پشتیبانی
         </a>
