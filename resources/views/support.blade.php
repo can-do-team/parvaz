@@ -23,7 +23,7 @@
     </header>
 
     <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px] pt-20 overflow-y-scroll'>
-        <a href="" class="border-b border-b-[#09969A] bg-white px-3 py-4 w-10/12 mx-auto text-[#09969a] flex justify-center items-center rounded-2xl mb-8 hover:bg-[#09969a] hover:text-white">سوالات متداول</a>
+        <a href="/faq" class="border-b border-b-[#09969A] bg-white px-3 py-4 w-10/12 mx-auto text-[#09969a] flex justify-center items-center rounded-2xl mb-8 hover:bg-[#09969a] hover:text-white">سوالات متداول</a>
         <a href="" class="border-b border-b-[#09969A] bg-white px-3 py-4 w-10/12 mx-auto text-[#09969a] flex justify-center items-center rounded-2xl mb-8 hover:bg-[#09969a] hover:text-white">درخواست پشتیبانی</a>
         <a href="" class="border-b border-b-[#09969A] bg-white px-3 py-4 w-10/12 mx-auto text-[#09969a] flex justify-center items-center rounded-2xl hover:bg-[#09969a] hover:text-white">سوابق پشتیبانی</a>
     </div>

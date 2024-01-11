@@ -15,6 +15,10 @@ class SupportController extends Controller
     {
         return view('support');
     }
+    public function faq()
+    {
+        return view('faq');
+    }
     public function index()
     {
         //
