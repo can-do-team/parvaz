@@ -25,5 +25,16 @@ class DatabaseSeeder extends Seeder
              'address' => 'hamedan',
              'group_id' => null,
          ]);
+         User::create([
+             'firstname' => 'admin',
+             'lastname' => 'admin',
+             'number' => '09181111111',
+             'email' => 'admin@panel.com',
+             'password' => '12341234',
+             'role' => '2',
+             'area' => '1',
+             'address' => 'hamedan',
+             'group_id' => null,
+         ]);
     }
 }

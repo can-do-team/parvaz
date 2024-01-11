@@ -16,8 +16,12 @@ class AuthController extends Controller
     public function loginAction(Request $request)
     {
         if (Auth::attempt(array('number' => $request->number, 'password' => $request->password))){
-                if (Auth::user())
-                    return redirect('dashboard');
+                if (Auth::user()) {
+                    if (Auth::user()->role==1)
+                        return redirect('dashboard');
+                    else
+                        return redirect('admin-dashboard');
+                }
                 else
                     return redirect('login');
         }else{
@@ -70,6 +74,7 @@ class AuthController extends Controller
             'area' =>  $request->area,
             'address' =>  $request->address,
             'group_id' => null,
+            'role' => 1,
         ]);
 
         Auth::attempt(array('number' => $request->number, 'password' => $request->password));
