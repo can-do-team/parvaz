@@ -17,6 +17,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/group/user",[GroupController::class,'group_user'])->name('group-user');
 Route::get("/show-group",[DashboardController::class,'show_group'])->name('show-group');
 Route::get("/login",[AuthController::class,'login'])->name('login');
 Route::post("/login",[AuthController::class,'loginAction'])->name('loginAction');
@@ -27,4 +28,5 @@ Route::get("/dashboard",[DashboardController::class,'show'])->name('dashboard');
 Route::get("/admin-dashboard",[DashboardController::class,'show'])->name('admin-dashboard');
 Route::get("/groups",[GroupController::class,'index'])->name('groups');
 Route::get("/group/{group}/edit",[GroupController::class,'edit'])->name('group-edit');
+Route::post("/logout",[AuthController::class,'logout'])->name('logout');
 

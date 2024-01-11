@@ -15,6 +15,11 @@ class GroupController extends Controller
         return view('show_group',['groups'=>$groups]);
 
     }
+    public function group_user(){
+        $groups=Group::all();
+        return view('group_user',['groups'=>$groups]);
+
+    }
     public function index()
     {
         //check Admin
