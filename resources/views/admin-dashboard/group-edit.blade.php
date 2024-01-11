@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="w-full flex flex-wrap">
-    <aside class="w-2/12 bg-gray-500 text-white h-[100svh] p-6">
+    <aside class="w-2/12 bg-gray-500 text-white min-h-[100svh] p-6">
         <nav>
             <ul class="flex flex-col gap-y-3">
                 <li><a href="/admin-dashboard">خانه</a></li>
@@ -26,12 +26,10 @@
             </ul>
         </nav>
     </aside>
-    <main class="w-10/12 flex  p-10 gap-x-5">
-        <a class="flex h-[20svh] justify-center items-center rounded-2xl bg-sky-300 px-8 py-5 " href="/groups">گروه قطعی</a>
-        <a class="flex h-[20svh] justify-center items-center rounded-2xl bg-sky-300 px-8 py-5 " href="">محل های پخش</a>
-        <a class="flex h-[20svh] justify-center items-center rounded-2xl bg-sky-300 px-8 py-5 " href="">کاربران و مصارف</a>
-        <a class="flex h-[20svh] justify-center items-center rounded-2xl bg-sky-300 px-8 py-5 " href="">احراز هویت</a>
-        <a class="flex h-[20svh] justify-center items-center rounded-2xl bg-sky-300 px-8 py-5 " href="">پاسخگویی پشتیبانی</a>
+    <main class="w-10/12  min-h[100svh] flex flex-col p-10 gap-x-5">
+        <h1 class="text-3xl mb-8">ویرایش گروه</h1>
+
+
     </main>
 </div>
 </body>

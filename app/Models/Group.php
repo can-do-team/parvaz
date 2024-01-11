@@ -12,6 +12,7 @@ class Group extends Model
     protected $fillable = [
         'title',
         'details',
+        'time',
         'is_active',
     ];
 }

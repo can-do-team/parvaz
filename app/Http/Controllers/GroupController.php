@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreGroupRequest;
 use App\Http\Requests\UpdateGroupRequest;
 use App\Models\Group;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GroupController extends Controller
 {
@@ -13,7 +15,18 @@ class GroupController extends Controller
      */
     public function index()
     {
-        //
+        //check Admin
+        if (Auth::user()){
+            if (Auth::user()->role==1) {
+                Auth::logout();
+                return view('login');
+            }
+        }else{
+            return redirect('login');
+        }
+
+        $groups=Group::all();
+        return view('admin-dashboard.group',['groups'=>$groups]);
     }
 
     /**
@@ -45,7 +58,19 @@ class GroupController extends Controller
      */
     public function edit(Group $group)
     {
-        //
+        dd($group);
+
+        //check Admin
+        if (Auth::user()){
+            if (Auth::user()->role==1) {
+                Auth::logout();
+                return view('login');
+            }
+        }else{
+            return redirect('login');
+        }
+
+        return view('admin-dashboard.group-edit',['group'=>$group]);
     }
 
     /**
