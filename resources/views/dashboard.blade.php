@@ -51,7 +51,7 @@
         </nav>
     </div>
     <footer class="bg-[#09969A] h-[80px] w-full absolute bottom-0 flex justify-around items-center rounded-t-[55px] text-center">
-        <a href="" class="flex flex-col justify-between items-center text-white text-sm p-2 hover:bg-[#00000020] w-3/12 rounded-full">
+        <a href="/profile" class="flex flex-col justify-between items-center text-white text-sm p-2 hover:bg-[#00000020] w-3/12 rounded-full">
             <img src="{{URL::asset('images/user.svg')}}" class="mb-1" alt="">
             حساب کاربری
         </a>
