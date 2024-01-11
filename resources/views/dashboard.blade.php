@@ -18,7 +18,7 @@
         <h1 class='text-center text-2xl mb-8 text-white  mt-8'>برنامه بودجه بندی آب</h1>
         <form action="/logout" method="post">
             @csrf
-            <button type="submit" href="" class="px-3 text-xs py-1 bg-[#00000030] rounded-2xl absolute left-4 top-4 text-white">خروج</button>
+            <button type="submit" class="px-3 text-xs py-1 bg-[#00000030] rounded-2xl absolute left-4 top-4 text-white">خروج</button>
         </form>
     </header>
 
