@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BroadcastController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 //use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/profile",[ProfileController::class,'profile'])->name('profile');
 Route::get("/group/user",[GroupController::class,'group_user'])->name('group-user');
 Route::get("/broadcast/user",[BroadcastController::class,'broadcast_user'])->name('broadcast-user');
 Route::get("/report/consumption",[AuthController::class,'report'])->name('report');
