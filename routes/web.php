@@ -19,6 +19,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/document/send",[ProfileController::class,'send_document'])->name('send-document');
 Route::get("/subscribers",[ProfileController::class,'subscribers'])->name('subscribers');
 Route::get("/profile",[ProfileController::class,'profile'])->name('profile');
 Route::get("/group/user",[GroupController::class,'group_user'])->name('group-user');

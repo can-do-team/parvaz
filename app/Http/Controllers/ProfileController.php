@@ -14,4 +14,7 @@ class ProfileController extends Controller
     public function subscribers(){
         return view('subscribers');
     }
+    public function send_document(){
+        return view('send-document');
+    }
 }
