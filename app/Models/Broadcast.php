@@ -14,6 +14,7 @@ class Broadcast extends Model
         'title',
         'address',
         'area',
+        'time',
         'volume',
         'is_active',
     ];

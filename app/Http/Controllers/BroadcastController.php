@@ -8,9 +8,11 @@ use App\Models\Broadcast;
 
 class BroadcastController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    public function broadcast_user(){
+        $broadcasts=Broadcast::all();
+        return view('broadcast_user',['broadcasts'=>$broadcasts]);
+
+    }
     public function index()
     {
         //

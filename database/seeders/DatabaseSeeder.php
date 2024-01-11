@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Broadcast;
 use App\Models\Group;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -83,5 +84,35 @@ class DatabaseSeeder extends Seeder
              'details' => 'شهرک فرهنگیان- حاجی اباد- علی اباد فرهنگیان- حصار راه علی اباد قاسم باد',
              'time' => 'هفته های اول و دوم ساع  ۱۵ تا ۲۱ و هفته سوم و چهار ۸ تا ۱۵',
          ]);
+
+         Broadcast::create([
+             'title' => 'هنرستان',
+             'address' => 'همدان , بلوار بعثت , خیابان هنرستان , جنب پارک نواری',
+             'time' => '11 صبح',
+             'area' => '1',
+             'volume' => '-',
+         ]);
+         Broadcast::create([
+             'title' => 'استادان',
+             'address' => 'همدان , میدان بیمه , بلوار استادان , ۱۸متری فجر',
+             'time' => '13 ظهر',
+             'area' => '1',
+             'volume' => '-',
+         ]);
+         Broadcast::create([
+             'title' => 'سعیدیه',
+             'address' => 'همدان , بلوار بعثت , پارک سعیدیه',
+             'time' => '9 ظهر',
+             'area' => '1',
+             'volume' => '-',
+         ]);
+         Broadcast::create([
+             'title' => 'بهار',
+             'address' => 'بهار , خیابان امام , کوچه صمدی',
+             'time' => '11 ظهر',
+             'area' => '1',
+             'volume' => '-',
+         ]);
+
     }
 }
