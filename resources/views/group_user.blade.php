@@ -29,7 +29,7 @@
         <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
             <h2 class="text-[#09969A] text-center mb-4 text-xl">{{$group->title}} </h2>
             <p class="mb-3 text-center text-[#535353] ">{{$group->details}}</p>
-            <p class="text-xs mt-5 text-[#09969A]">{{$group->time}}</p>
+            <p class="text-[16px] text-center px-5 py-2 rounded-2xl bg-gray-100 mt-5 text-[#09969A]">{{$group->time}}</p>
         </div>
         @endforeach
     </div>
