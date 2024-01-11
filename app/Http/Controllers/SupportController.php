@@ -11,6 +11,10 @@ class SupportController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function home()
+    {
+        return view('support');
+    }
     public function index()
     {
         //

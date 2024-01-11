@@ -5,6 +5,7 @@ use App\Http\Controllers\BroadcastController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GroupController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SupportController;
 use Illuminate\Support\Facades\Route;
 
 //use Illuminate\Support\Facades\Route;
@@ -19,6 +20,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/support",[SupportController::class,'home'])->name('support');
 Route::get("/document/send",[ProfileController::class,'send_document'])->name('send-document');
 Route::get("/subscribers",[ProfileController::class,'subscribers'])->name('subscribers');
 Route::get("/profile",[ProfileController::class,'profile'])->name('profile');
