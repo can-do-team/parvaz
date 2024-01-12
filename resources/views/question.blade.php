@@ -22,12 +22,12 @@
 
     <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[70px] rounded-t-[80px] pt-20 overflow-y-scroll'>
 
-        <div class="w-10/12 mx-auto">
+        <form action="/support/new" method="post" class="w-10/12 mx-auto">
+            @csrf
             <input id='title' name='title' class='w-full mx-auto outline-0 border-0 px-4 py-4 shadow-xl   my-3 rounded-[8px]' type="text" placeholder='عنوان درخواست خود را وارد کنید ...'/>
             <textarea id='text' rows="10" name='text' class='w-full mx-auto outline-0 border-0 px-4 py-4 shadow-xl   my-3 rounded-[8px]' type="text" placeholder='متن خود را وارد کنید ...'></textarea>
             <input class='w-full mx-auto bg-[#09969A] text-white py-3 px-2 mt-5 mb-3 rounded-2xl  shadow-xl hover:bg-[#09868A]' type="submit" value="ارسال درخواست"/>
-
-        </div>
+        </form>
 
     </div>
     <footer class="bg-[#09969A] h-[80px] w-full absolute bottom-0 flex justify-around items-center rounded-t-[55px] text-center">

@@ -23,22 +23,13 @@
     <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[70px] rounded-t-[80px] pt-10 overflow-y-scroll'>
 
         <div class="w-10/12 mx-auto">
+
+            @foreach($supports as $support)
            <div class="w-full my-8 bg-white py-4 px-6 rounded-2xl shadow-sm">
-               <h3 class="font-bold text-[#09969A] mb-3">عنوان</h3>
-               <p class="text-gray-600">متن ساختگی</p>
+               <h3 class="font-bold text-[#09969A] mb-3">{{$support->title}}</h3>
+               <p class="text-gray-600">{{$support->text}}</p>
            </div>
-           <div class="w-full my-8 bg-white py-4 px-6 rounded-2xl shadow-sm">
-               <h3 class="font-bold text-[#09969A] mb-3">عنوان</h3>
-               <p class="text-gray-600">متن ساختگی</p>
-           </div>
-           <div class="w-full my-8 bg-white py-4 px-6 rounded-2xl shadow-sm">
-               <h3 class="font-bold text-[#09969A] mb-3">عنوان</h3>
-               <p class="text-gray-600">متن ساختگی</p>
-           </div>
-           <div class="w-full my-8 bg-white py-4 px-6 rounded-2xl shadow-sm">
-               <h3 class="font-bold text-[#09969A] mb-3">عنوان</h3>
-               <p class="text-gray-600">متن ساختگی</p>
-           </div>
+            @endforeach
         </div>
 
     </div>

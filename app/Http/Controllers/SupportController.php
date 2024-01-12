@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSupportRequest;
 use App\Http\Requests\UpdateSupportRequest;
 use App\Models\Support;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SupportController extends Controller
 {
@@ -25,7 +27,17 @@ class SupportController extends Controller
     }
     public function questions()
     {
-        return view('questions');
+        $supports=Support::all();
+        return view('questions',compact('supports'));
+    }
+    public function new(Request $request)
+    {
+        Support::create([
+            'title'=>$request->title,
+            'text'=>$request->text,
+            'user_id'=>Auth::user()->id
+        ]);
+        return redirect("questions");
     }
     public function index()
     {

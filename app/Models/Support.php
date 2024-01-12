@@ -11,6 +11,7 @@ class Support extends Model
 
     protected $fillable = [
         'title',
+        'text',
         'user_id',
     ];
 

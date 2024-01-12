@@ -44,3 +44,4 @@ Route::get("/group/{group}/edit",[GroupController::class,'edit'])->name('group-e
 Route::post("/logout",[AuthController::class,'logout'])->name('logout');
 
 Route::post("/profile/update",[ProfileController::class,'profile_update'])->name('profile-update');
+Route::post("/support/new",[SupportController::class,'new'])->name('support-new');
