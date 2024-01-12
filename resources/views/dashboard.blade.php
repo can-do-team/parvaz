@@ -31,7 +31,7 @@
                 این هفته در <span class="font-bold text-[#09767A] animate-pulse mx-3">ساعات 8 تا 15</span> انجام
                 میشود.</p>
             <a href="/group/user" class="text-[#707175] hover:text-[#09969A] underline">نمایش همه گروه ها</a>
-            <a href="/profile" class="text-[#09969A] hover:text-[#707175] underline flex">تنطیم نوتیفیکیشن قعطی آب </a>
+            <a href="/profile" class="text-[#707175] hover:text-[#09969A] underline flex">تنطیم نوتیفیکیشن قعطی آب </a>
         </div>
         <nav class="w-11/12 mx-auto flex flex-wrap justify-between">
         <a href="/broadcast/user" class="w-[45%] my-1 rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
@@ -49,7 +49,7 @@
                 امور مشترکین
             </a>
 
-        <a href="/report/consumption" class="w-[45%] rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
+        <a href="/report/quality" class="w-[45%] rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
            <div class="bg-[#FFFFFF] w-full h-[12svh] mb-4 flex justify-center items-center rounded-2xl shadow">
                <img src="{{URL::asset('images/humidity.png')}}" class="mb-1" alt="humidity">
            </div>

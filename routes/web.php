@@ -30,6 +30,7 @@ Route::get("/profile",[ProfileController::class,'profile'])->name('profile');
 Route::get("/group/user",[GroupController::class,'group_user'])->name('group-user');
 Route::get("/broadcast/user",[BroadcastController::class,'broadcast_user'])->name('broadcast-user');
 Route::get("/report/consumption",[AuthController::class,'report'])->name('report');
+Route::get("/report/quality",[AuthController::class,'report_quality'])->name('quality');
 Route::get("/show-group",[DashboardController::class,'show_group'])->name('show-group');
 Route::get("/login",[AuthController::class,'login'])->name('login');
 Route::post("/login",[AuthController::class,'loginAction'])->name('loginAction');

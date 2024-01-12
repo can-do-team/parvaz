@@ -17,6 +17,10 @@ class AuthController extends Controller
     {
         return view('report');
     }
+    public function report_quality()
+    {
+        return view('report_quality');
+    }
     public function loginAction(Request $request)
     {
         if (Auth::attempt(array('number' => $request->number, 'password' => $request->password))){
