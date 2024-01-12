@@ -23,6 +23,10 @@ class SupportController extends Controller
     {
         return view('question');
     }
+    public function questions()
+    {
+        return view('questions');
+    }
     public function index()
     {
         //
