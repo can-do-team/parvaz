@@ -20,6 +20,7 @@ Route::get('/', function () {
 //});
 
 
+Route::get("/question",[SupportController::class,'question'])->name('question');
 Route::get("/faq",[SupportController::class,'faq'])->name('faq');
 Route::get("/support",[SupportController::class,'home'])->name('support');
 Route::get("/document/send",[ProfileController::class,'send_document'])->name('send-document');
