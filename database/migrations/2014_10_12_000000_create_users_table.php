@@ -22,6 +22,8 @@ return new class extends Migration
             $table->integer('role')->default(1);//1-user 2-admin
             $table->string('area');
             $table->text('address')->nullable();
+            $table->boolean('notif1')->default(false);
+            $table->boolean('notif2')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

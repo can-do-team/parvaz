@@ -27,6 +27,8 @@ class User extends Authenticatable
         'address',
         'role',
         'group_id',
+        'notif1',
+        'notif2',
     ];
 
     /**
