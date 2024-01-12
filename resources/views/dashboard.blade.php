@@ -22,32 +22,48 @@
         </form>
     </header>
 
-    <div class='h-[75svh] flex flex-col items-start justify-center  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px]  overflow-y-scroll'>
+    <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px] pt-10 overflow-y-scroll'>
 
 
-        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-5">
+        <div class="w-11/12 mx-auto p-6 bg-white shadow rounded-2xl mb-2">
             <h2 class="text-[#09969A] text-center mb-4">قطعی آب </h2>
             <p class="mb-3">مدیریت فشار آب در گروه منطقه شما
                 این هفته در <span class="font-bold text-[#09767A] animate-pulse mx-3">ساعات 8 تا 15</span> انجام
                 میشود.</p>
             <a href="/group/user" class="text-[#707175] hover:text-[#09969A] underline">نمایش همه گروه ها</a>
+            <a href="/profile" class="text-[#09969A] hover:text-[#707175] underline flex">تنطیم نوتیفیکیشن قعطی آب </a>
         </div>
         <nav class="w-11/12 mx-auto flex flex-wrap justify-between">
-        <a href="/broadcast/user" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/broadcast/user" class="w-[45%] my-1 rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
+           <div class="bg-[#FFFFFF] w-full h-[12svh] mb-4 flex justify-center items-center rounded-2xl shadow">
+               <img src="{{URL::asset('images/faucet.png')}}" class="mb-1" alt="humidity">
+           </div>
             توزیع آب
             در محل
         </a>
-        <a href="" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+
+            <a href="/subscribers" class="w-[45%] my-1 rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
+                <div class="bg-[#FFFFFF] w-full h-[12svh] mb-4 flex justify-center items-center rounded-2xl shadow">
+                    <img src="{{URL::asset('images/hydration.png')}}" class="mb-1" alt="humidity">
+                </div>
+                امور مشترکین
+            </a>
+
+        <a href="/report/consumption" class="w-[45%] rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
+           <div class="bg-[#FFFFFF] w-full h-[12svh] mb-4 flex justify-center items-center rounded-2xl shadow">
+               <img src="{{URL::asset('images/humidity.png')}}" class="mb-1" alt="humidity">
+           </div>
             گزارش کیفیت
             آب
         </a>
-        <a href="/subscribers" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
-            امور مشترکین
-        </a>
-        <a href="/report/consumption" class="w-[45%] my-4 rounded-2xl flex justify-center items-center shadow hover:bg-[#eeeeee] h-[15svh] text-black bg-[#FFFFFF]  flex-wrap p-4 text-center">
+        <a href="/report/consumption" class="w-[45%]  rounded-2xl flex justify-center items-center  hover:bg-[#09969A10]  h-[19svh] text-black   flex-wrap p-4 text-center">
+           <div class="bg-[#FFFFFF] w-full h-[12svh] mb-4 flex justify-center items-center rounded-2xl shadow">
+               <img src="{{URL::asset('images/water-drop.png')}}" class="mb-1" alt="humidity">
+           </div>
             گزارش مصرف
             من
         </a>
+
         </nav>
     </div>
     <footer class="bg-[#09969A] h-[80px] w-full absolute bottom-0 flex justify-around items-center rounded-t-[55px] text-center">
