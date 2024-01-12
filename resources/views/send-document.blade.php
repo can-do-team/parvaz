@@ -16,10 +16,7 @@
 <div class=" w-[420px] h-[85svh] bg-[#09969A] mx-auto rounded-2xl overflow-y-scroll relative ">
     <header class="w-full min-h-[10svh] flex justify-center items-center">
         <h1 class='text-center text-2xl mb-8 text-white mt-8'>ثبت مدارک</h1>
-        <form action="/logout" method="post">
-            @csrf
-            <button type="submit" class="px-3 text-xs py-1 bg-[#00000030] rounded-2xl absolute left-4 top-4 text-white">خروج</button>
-        </form>
+        <a href="/subscribers" type="submit" class="px-3 text-xs py-1 bg-[#00000030] rounded-2xl absolute left-4 top-4 text-white">بازگشت</a>
     </header>
 
     <div class='h-[75svh] flex flex-col items-center justify-start  bg-[#F3F7FB] w-full mx-auto p-5 pb-[80px] rounded-t-[80px] pt-10 overflow-y-scroll'>
