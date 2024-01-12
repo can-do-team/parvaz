@@ -43,3 +43,4 @@ Route::get("/groups",[GroupController::class,'index'])->name('groups');
 Route::get("/group/{group}/edit",[GroupController::class,'edit'])->name('group-edit');
 Route::post("/logout",[AuthController::class,'logout'])->name('logout');
 
+Route::post("/profile/update",[ProfileController::class,'profile_update'])->name('profile-update');
