@@ -32,21 +32,21 @@
         <table class="mt-8 border border-collapse text-center">
             <thead>
             <tr class="bg-gray-100 ">
-                <th class="w-2/12">شماره گروه </th>
-                <th>محلات و مناطق های تحت پوشش</th>
-                <th class="w-2/12">زمان قعطی</th>
+                <th class="w-2/12">عنوان </th>
+                <th>آدرس</th>
+                <th class="w-2/12">زمان پخش</th>
                 <th class="w-1/12">عملیات</th>
             </tr>
             </thead>
             <tbody>
-            @foreach($groups as $group)
+            @foreach($broadcasts as $broadcast)
                 <tr class="border-b">
 
-                    <td class="py-5">{{$group->title}}</td>
-                    <td class="py-5">{{$group->details}}</td>
-                    <td class="py-5">{{$group->time}}</td>
+                    <td class="py-5">{{$broadcast->title}}</td>
+                    <td class="py-5">{{$broadcast->address}}</td>
+                    <td class="py-5">{{$broadcast->time}}</td>
                     <td class="py-5">
-                        <form action="{{route("group-edit",$group->id)}}" method="get">
+                        <form action="{{route("group-edit",$broadcast->id)}}" method="get">
                             @csrf
                             <button class="bg-sky-300 text-white px-4 py-2 rounded-2xl" type="submit">ویرایش</button>
                         </form>

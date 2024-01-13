@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreBroadcastRequest;
 use App\Http\Requests\UpdateBroadcastRequest;
 use App\Models\Broadcast;
+use Illuminate\Support\Facades\Auth;
 
 class BroadcastController extends Controller
 {
@@ -15,7 +16,18 @@ class BroadcastController extends Controller
     }
     public function index()
     {
-        //
+        //check Admin
+        if (Auth::user()){
+            if (Auth::user()->role==1) {
+                Auth::logout();
+                return view('login');
+            }
+        }else{
+            return redirect('login');
+        }
+
+        $broadcast=Broadcast::all();
+        return view('admin-dashboard.broadcast',['broadcasts'=>$broadcast]);
     }
 
     /**

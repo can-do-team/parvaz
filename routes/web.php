@@ -40,6 +40,7 @@ Route::get("/login",[AuthController::class,'login'])->name('login');
 Route::get("/dashboard",[DashboardController::class,'show'])->name('dashboard');
 Route::get("/admin-dashboard",[DashboardController::class,'show'])->name('admin-dashboard');
 Route::get("/groups",[GroupController::class,'index'])->name('groups');
+Route::get("/broadcasts",[BroadcastController::class,'index'])->name('broadcasts');
 Route::get("/group/{group}/edit",[GroupController::class,'edit'])->name('group-edit');
 Route::post("/logout",[AuthController::class,'logout'])->name('logout');
 
